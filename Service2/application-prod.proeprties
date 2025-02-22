@@ -1,0 +1,19 @@
+# Server Configuration
+server.port=8082
+
+# Database Configuration
+spring.r2dbc.url=r2dbc:postgresql://prod-db.example.com:5432/prod_db
+spring.r2dbc.username=prod_user
+spring.r2dbc.password=prod_password
+
+# Logging
+logging.level.root=ERROR
+
+# gRPC Configuration
+grpc.server.port=9092
+
+# External Config (Pull-based)
+external.config.url=http://config-service.example.com/config/prod
+
+# Feature Toggle
+feature.newFeatureEnabled=false
